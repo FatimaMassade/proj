@@ -126,7 +126,7 @@ body{overflow-x: hidden;
                border:  1px solid rgb(165, 213, 235);
                border-radius: 20px;
                min-height: 3px;
-               width: 380px;
+               width: 480px;
                overflow:hidden;
                margin: 50px;}     
 
@@ -185,20 +185,13 @@ body{overflow-x: hidden;
           @media( max-width:450px){
            .car{width: 270px ;}
             .list{font-size:25px ;}
-            .name h2 {}}
+            .name h2 { width: 10px;}}
 
-            .name {
-               width: 100%;
-               min-height: 100vh;
-      /*  vh عشان يغطي كل شي بشاشه */
-               display: flex;
-               align-items: center;
-               background-image:url(o.png);
-               background-size: cover;
-               background-position: center;
-               background-attachment: fixed;
-               padding:0 40px ;
-             }
+
+
+            @media (min-width:210px) and (max-width:1200px){
+            .name{background-image: none;}
+            }
       
       
 
@@ -213,13 +206,13 @@ body{overflow-x: hidden;
              .content{flex-direction: column;
              align-items: center; }} */
 
-           /* @media screen and (min-device-width:210px) and (max-device-width:400px)
+/*             
              { .nav a{padding: 9px;}  
              .name h3{font-size: 15px};
-             .name h2{ font-size: px;} }
+             .name h2{ font-size: px;} }  */
 
           
-      .name{
+      /* .name{
         
          display: flex;
          align-items: center;
@@ -228,4 +221,4 @@ body{overflow-x: hidden;
           background-position: center;
          background-attachment: fixed;
          padding: 0 50px;
-       } */
+       } */ 
